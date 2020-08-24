@@ -1,0 +1,38 @@
+{
+    "name": "lola",
+    "displayName": "LoLa",
+    "description": "Language support for LoLa",
+    "version": "0.1.0",
+    "publisher": "xq",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Vexu/lola-vscode"
+    },
+    "bugs": {
+        "url": "https://github.com/Vexu/lola-vscode/issues"
+    },
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "lola",
+                "extensions": [
+                    ".lola"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "lola",
+                "scopeName": "source.lola",
+                "path": "./syntaxes/lola.tmLanguage.json"
+            }
+        ]
+    }
+}
